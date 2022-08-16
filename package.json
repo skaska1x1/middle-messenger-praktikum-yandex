@@ -9,8 +9,8 @@
     "start1": "parcel build src/index.html",
     "server": "node src/server.js",
     "server-terminal": "curl http://localhost:3000/src/index.html",
-    "watch": "parcel src/index.html watch",
-    "build": "parcel src/index.html build"
+    "watch": "parcel src/index.html --port 3000 watch",
+    "build": "parcel src/index.html --port 3000 build"
   },
   "author": "",
   "license": "ISC",
