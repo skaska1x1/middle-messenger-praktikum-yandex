@@ -1,0 +1,53 @@
+doctype html
+html
+    head  
+        link(rel="stylesheet", href="style.css")
+        title main-chat
+        body 
+            .container
+                // main
+                //.mainBtn
+                //    - var textLink='main'
+                //    - var link='../../index.pug'
+                //    include ../../components/link/link
+                aside.chats__aside
+                    .chats__aside-top
+                        .profile-chat
+                            - var textLink= 'Профиль'
+                            - var link= '../profile/profile.html'
+                            include ../../components/link/link
+                        .input-search 
+                            - var placeholder='Поиск...'
+                            - var inputType='search'
+                            include ../../components/input/input
+                        .chats__aside-main
+                            - for (let i = 0; i < 8; i++)
+                                ul 
+                                    li
+                                        include ../chats/chat/chat.pug
+                    .chats__expanded
+                        .chats__expanded-top
+                            .chat__avatar
+                                .avatar__icon
+                                    p icon 
+                            .user
+                                p.user__name  user-name
+                            .settings
+                                span 
+                        .chats__expanded-main
+                            .interlocutor-message
+                                p interlocutor-message
+                        .my-message__box
+                            .my-message
+                                    p my-message
+                        .chats__expanded-bottom
+                            form.form
+                                .chats__expanded-btn
+                                    - var placeholder='введите сообщение'
+                                    - var inputType='text'
+                                    include ../../components/input/input
+                                .chats__expanded-submit
+                                    - var placeholder='введите сообщение'
+                                    - var inputType='submit'
+                                    - var value='отправить'
+                                    include ../../components/input/input

@@ -1,0 +1,33 @@
+doctype html
+html
+    head  
+        link(rel="stylesheet", href="style.css")
+        title chats
+        body 
+            .container
+                // main
+                //.mainBtn
+                //    - var textLink='main'
+                //    - var link='../../index.pug'
+                //    include ../../components/link/link
+                aside.chats__aside
+                    .chats__aside-top
+                        .profile-chat
+                            - var textLink= 'Профиль'
+                            - var link= '../profile/profile.html'
+                            include ../../components/link/link
+                        .input-search
+                            - var placeholder='Поиск...'
+                            - var inputType='search'
+                            include ../../components/input/input
+                        .chats__aside-main
+                            - for (let i = 0; i < 8; i++)
+                                ul
+                                    li
+                                        include ../chats/chat/chat.pug
+                    .chats__expanded
+                        .plug
+                            - var placeholder='Выберите, кому хотели бы написать'
+                            - var inputType='text'
+                            - var disabled= 'disabled'
+                            include ../../components/input/input

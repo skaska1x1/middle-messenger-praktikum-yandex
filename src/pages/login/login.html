@@ -1,0 +1,118 @@
+
+<style>
+   .card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__title {
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 2rem;
+    background-color: #fff;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+}
+
+.label-login,
+.label-password {
+    transform: translateY(16px);
+    padding-left: 16px;
+}
+
+.button-box {
+    padding-top: 2rem;
+}
+</style>
+<div class="card">
+  <div class="card__title">
+    <form class="form" action="./pages/chats/chats.html">
+      <p class="title">Войти</p>
+      <!-- input-->
+      <label class="label-login" label="Логин">Логин</label>
+      <style>
+         .input {
+    width: 100%;
+    border-radius: 1rem;
+    position: relative;
+    border: .3px solid rgb(128, 128, 128, .4);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    outline: none;
+}
+      </style>
+      <input class="input" type="text"/>
+      <label class="label-password" label="Пароль">Пароль</label>
+      <style>
+         .input {
+    width: 100%;
+    border-radius: 1rem;
+    position: relative;
+    border: .3px solid rgb(128, 128, 128, .4);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    outline: none;
+}
+      </style>
+      <input class="input" type="password"/>
+      <!-- button-->
+      <div class="button-box">
+        <style>
+           .button {
+    width: 100%;
+    padding: .6rem;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(114, 46, 99);
+    color: #fff;
+    border-radius: 11rem;
+    border: none;
+    transition: all 1s ease;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(114, 46, 99, .6);
+}
+        </style>
+        <button class="button">Авторизоваться</button>
+      </div>
+      <!-- link-->
+      <style>
+          a {
+    text-decoration: none;
+}
+
+.classLink {
+    text-align: center;
+    transition: .5s;
+}
+
+.classLink:hover {
+    opacity: .7;
+}
+      </style><a class="classLink" href="./pages/register/register.html">Нет аккаунта?</a>
+    </form>
+  </div>
+</div>

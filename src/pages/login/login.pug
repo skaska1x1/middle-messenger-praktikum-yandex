@@ -1,0 +1,23 @@
+
+style 
+    include login.css 
+.card
+    .card__title
+         - var link= './pages/chats/chats.html'
+         form.form(action=link)
+             p.title Войти
+             // input
+             label(label="Логин").label-login Логин
+             - var inputType = 'text'
+             include ../../components/input/input.pug
+             label(label="Пароль").label-password Пароль
+             - var inputType = 'password'
+             include ../../components/input/input.pug
+             // button
+             .button-box
+                     - var text='Авторизоваться'
+                     include ../../components/button/button.pug
+             // link
+             - var link= './pages/register/register.html'
+             - var textLink='Нет аккаунта?'
+             include ../../components/link/link.pug

@@ -1,0 +1,60 @@
+doctype html
+html
+    head  
+        link(rel="stylesheet", href="style.css")
+        title profile-change
+        body 
+            .card
+                // main
+                //.mainBtn
+                //    - var textLink='main'
+                //    - var link='../../index.pug'
+                //    include ../../components/link/link
+                .card__title
+                    form.form
+                        .profile-form
+                        p.title Изменить данные
+                        // mail
+                        - var inputType= "email"
+                        - var name= "email"
+                        - var placeholder= ""
+                        label(label="Почта").label-email Почта
+                        include ../../components/input/input.pug
+                        // login
+                        - var inputType= "text"
+                        - var name= "login"
+                        - var placeholder= ""
+                        label(label="Логин").label-login Логин
+                        include ../../components/input/input.pug
+                        // first_name
+                        - var inputType= "text"
+                        - var name= "first_name"
+                        - var placeholder= ""
+                        label(label="Имя").label-first_name Имя
+                        include ../../components/input/input.pug
+                        // second_name
+                        - var inputType= "text"
+                        - var name= "chat_name"
+                        - var placeholder= ""
+                        label(label="Фамилия").label-chat_name Имя в чате
+                        include ../../components/input/input.pug
+                        // second_name
+                        - var inputType= "text"
+                        - var name= "second_name"
+                        - var placeholder= ""
+                        label(label="Фамилия").label-second_name Фамилия
+                        include ../../components/input/input.pug
+                        // phone
+                        - var inputType= "tel"
+                        - var name= "phone"
+                        - var placeholder= ""
+                        label(label="Телефон").label-phone Телефон
+                        include ../../components/input/input.pug
+                        // button Сохранить
+                        -var text='Сохранить'
+                        -var typeButton='submit'
+                        include ../../components/button/button
+                        // link Выйти
+                        -var textLink='Выйти'
+                        // -var link='../../index.pug'
+                        include ../../components/link/link

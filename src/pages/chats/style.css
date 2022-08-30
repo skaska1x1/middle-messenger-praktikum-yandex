@@ -1,0 +1,80 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    background-color: rgb(238 217 217);
+}
+
+/* container */
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* mainBtn */
+.mainBtn {
+    position: absolute;
+    top: 0;
+    left: 10rem;
+}
+
+/* .chats__aside */
+.chats__aside {
+    display: flex;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+/* .chats__aside-top */
+.chats__aside-top {
+    background-color: rgb(128, 128, 128, .1);
+}
+
+/* profile-chat */
+.profile-chat {
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+/* input-search */
+.input-search {
+    padding: .4rem;
+}
+
+/* chats__aside-main */
+/* .chats__aside-main {} */
+
+/* chats__expanded */
+.chats__expanded {
+    width: 100%;
+    align-items: center;
+    position: relative;
+    cursor: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* plug */
+.plug {
+    background-color: rgb(114, 46, 99, .1);
+    cursor: none;
+    width: 50%;
+    border-radius: 1rem;
+}
+
+/* plug input */
+.plug input {
+    text-align: center;
+    cursor: default;
+    color: #722e63;
+}

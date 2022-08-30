@@ -1,0 +1,42 @@
+doctype html
+html
+    head  
+        link(rel="stylesheet", href="style.css")
+        title profile
+        body 
+            .card
+                // main
+                //.mainBtn
+                    // -var textLink='main'
+                    // -var link='../../index.html'
+                    //include ../../components/link/link
+                .card__title
+                    form.form
+                        .profile-form
+                        p.title Профиль
+                        .profile-form__item
+                            p Имя в чате
+                            p nick_name
+                        .profile-form__item
+                            p Почта
+                            p userEmail
+                        .profile-form__item
+                            p Логин
+                            p userLogin
+                        .profile-form__item
+                            p Имя
+                            p first_name
+                        .profile-form__item
+                            p Фамилия
+                            p second_name
+                        .profile-form__item
+                            p Телефон
+                            p userPhone
+                        //link Изменить данные
+                        -var textLink='Изменить данные'
+                        // -var link='../profileChange/profileChange.html'
+                        include ../../components/link/link
+                        // link Выйти
+                        -var textLink='Выйти'
+                        // -var link='../../index.pug'
+                        include ../../components/link/link

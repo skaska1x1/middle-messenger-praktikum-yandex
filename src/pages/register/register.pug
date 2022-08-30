@@ -1,0 +1,68 @@
+doctype html
+html
+    head  
+        link(rel="stylesheet", href="style.css")
+        title registration
+        body 
+            .container
+                // main
+                //.mainBtn
+                //    - var textLink='main'
+                //    - var link='../../index.pug'
+                //    include ../../components/link/link
+                .card
+                    .card__title
+                        form.form
+                            p.title Регистрация
+                            // mail
+                            - var inputType= "email"
+                            - var name= "email"
+                            - var placeholder= ""
+                            label(label="Почта").label-email Почта
+                            include ../../components/input/input.pug
+                            // login
+                            - var inputType= "text"
+                            - var name= "login"
+                            - var placeholder= ""
+                            label(label="Логин").label-login Логин
+                            include ../../components/input/input.pug
+                            // first_name
+                            - var inputType= "text"
+                            - var name= "first_name"
+                            - var placeholder= ""
+                            label(label="Имя").label-first_name Имя
+                            include ../../components/input/input.pug
+                            // second_name
+                            - var inputType= "text"
+                            - var name= "second_name"
+                            - var placeholder= ""
+                            label(label="Фамилия").label-second_name Фамилия
+                            include ../../components/input/input.pug
+                            // phone
+                            - var inputType= "tel"
+                            - var name= "phone"
+                            - var placeholder= ""
+                            label(label="Телефон").label-phone Телефон
+                            include ../../components/input/input.pug
+                            // password
+                            - var inputType= "password"
+                            - var name= "password"
+                            - var placeholder= ""
+                            label(label="Пароль").label-password Пароль
+                            include ../../components/input/input.pug
+                            // password2
+                            - var inputType= "password"
+                            - var name= "password2"
+                            - var placeholder= ""
+                            label(label="Пароль еще раз").label-password2 Пароль еще раз
+                            include ../../components/input/input.pug
+                            // button Регистрация
+                            - var typeButton= "button"
+                            - var valueButton= 'Регистрация'
+                            - var nameButton= 'registerButton'
+                            - var text= "Регистрация"
+                            include ../../components/button/button.pug
+                            // button Войти
+                            - var textLink= 'Войти'
+                            // - var link= '../../index.pug'
+                            include ../../components/link/link

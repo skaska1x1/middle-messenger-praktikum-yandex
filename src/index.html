@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>main</title>
+  </head>
+  <body>
+<style>
+   .card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__title {
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 2rem;
+    background-color: #fff;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+}
+
+.label-login,
+.label-password {
+    transform: translateY(16px);
+    padding-left: 16px;
+}
+
+.button-box {
+    padding-top: 2rem;
+}
+</style>
+<div class="card">
+  <div class="card__title">
+    <form class="form" action="./pages/chats/chats.html">
+      <p class="title">Войти</p>
+      <!-- input-->
+      <label class="label-login" label="Логин">Логин</label>
+      <style>
+         .input {
+    width: 100%;
+    border-radius: 1rem;
+    position: relative;
+    border: .3px solid rgb(128, 128, 128, .4);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    outline: none;
+}
+      </style>
+      <input class="input" type="text"/>
+      <label class="label-password" label="Пароль">Пароль</label>
+      <style>
+         .input {
+    width: 100%;
+    border-radius: 1rem;
+    position: relative;
+    border: .3px solid rgb(128, 128, 128, .4);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    outline: none;
+}
+      </style>
+      <input class="input" type="password"/>
+      <!-- button-->
+      <div class="button-box">
+        <style>
+           .button {
+    width: 100%;
+    padding: .6rem;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(114, 46, 99);
+    color: #fff;
+    border-radius: 11rem;
+    border: none;
+    transition: all 1s ease;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(114, 46, 99, .6);
+}
+        </style>
+        <button class="button">Авторизоваться</button>
+      </div>
+      <!-- link-->
+      <style>
+          a {
+    text-decoration: none;
+}
+
+.classLink {
+    text-align: center;
+    transition: .5s;
+}
+
+.classLink:hover {
+    opacity: .7;
+}
+      </style><a class="classLink" href="./pages/register/register.html">Нет аккаунта?</a>
+    </form>
+  </div>
+</div>
+    <div class="navigation-list"><a href="./pages/register/register.html">register</a><br><a href="./pages/profile/profile.html">profile</a><br><a href="./pages/profileChange/profileChange.html">profileChange</a><br><a href="./pages/mainChat/mainChat.html">mainChat</a><br><a href="./pages/chats/chats.html">chats-plug</a><br><a href="./pages/chats/chat/chat.html">chat</a><br><a href="./pages/error/fileNotFound404/fileNotFound404.html">page404</a><br><a href="./pages/error/serverError500/serverError500.html">page500</a></div>
+    <script>console.log(111)</script>
+  </body>
+</html>

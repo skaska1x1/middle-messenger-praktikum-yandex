@@ -1,0 +1,17 @@
+doctype html 
+html 
+    head 
+        link(rel="stylesheet", href="style.css")
+        title page404
+        body 
+            .center-box
+                .center-box__inner
+                    h1 
+                        i 404
+                    p  Страница не найдена
+                    // main
+                    .mainBtn
+                        - var textLink='вернуться на главную страницу'
+                        // - var link='../../../index.pug'
+                        p Попробуйте  
+                            include ../../../components/link/link
