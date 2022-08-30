@@ -1,0 +1,18 @@
+doctype html 
+html 
+    head 
+        link(rel="stylesheet", href="style.css")
+        title page500
+        body 
+            .center-box
+                
+                .center-box__inner
+                    h1 
+                        i 500
+                    p Ошибка сервера
+                    // main
+                    .mainBtn
+                        - var textLink='вернуться на главную страницу'
+                        // - var link='../../../index.pug'
+                        p Попробуйте  
+                            include ../../../components/link/link
