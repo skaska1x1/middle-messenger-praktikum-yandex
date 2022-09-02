@@ -6,7 +6,7 @@
     "start": "parcel src/index.pug --port 3000",
     "pug": "pug src/index.pug --pretty -w",
     "server": "node src/server.js",
-    "server-terminal": "curl http://localhost:3000/src/index.html",
+    "server-terminal": "curl http://localhost:3000/src/index.pug",
     "build": "parcel build src/index.pug"
   },
   "keywords": [],

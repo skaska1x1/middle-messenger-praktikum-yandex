@@ -8,9 +8,9 @@ const PORT = 3000;
 app.use(express.static('./'));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/', 'index.html'))
+    res.sendFile(path.join(__dirname, '/', 'index.pug'))
 })
 
 app.listen(PORT, function () {
-    console.log(`Порт работает. Перейти по ссылке http://localhost:${PORT}/src/index.html`);
+    console.log(`Порт работает. Перейти по ссылке http://localhost:${PORT}/src/index.pug`);
 });
