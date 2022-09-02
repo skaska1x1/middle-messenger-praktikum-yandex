@@ -4,23 +4,23 @@ html
         link(rel="stylesheet", href="style.css")
         title main
     body
-        include ./pages/login/login.html
-        .navigation-list
-            a(href='./pages/register/register.html') register
-            br
-            a(href='./pages/profile/profile.html') profile
-            br
-            a(href='./pages/profileChange/profileChange.html') profileChange
-            br
-            a(href='./pages/mainChat/mainChat.html') mainChat
-            br
-            a(href='./pages/chats/chats.html') chats-plug
-            br
-            a(href='./pages/chats/chat/chat.html') chat
-            br
-            a(href='./pages/error/fileNotFound404/fileNotFound404.html') page404
-            br
-            a(href='./pages/error/serverError500/serverError500.html') page500
+        include ./pages/login/login.pug
+        ul.navigation-list
+            li
+            a(href='./pages/register/register.pug') register
+            li
+            a(href='./pages/profile/profile.pug') profile
+            li
+            a(href='./pages/profileChange/profileChange.pug') profileChange
+            li
+            a(href='./pages/mainChat/mainChat.pug') mainChat
+            li
+            a(href='./pages/chats/chats.pug') chats-plug
+            li
+            a(href='./pages/chats/chat/chat.pug') chat
+            li
+            a(href='./pages/error/fileNotFound404/fileNotFound404.pug') page404
+            li
+            a(href='./pages/error/serverError500/serverError500.pug') page500
 
-        script
-            include index.js
+        script(type='module' src='index.js')
